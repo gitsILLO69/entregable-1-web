@@ -10,40 +10,41 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
     gap: 10px;
     padding: 20px;
+    background-color: lightgreen; 
 }
 
 .section {
     background-color: lightblue;
-    border: 2px solid #000;
+    border: 2px solid #000; 
     padding: 20px;
     text-align: center;
 }
 
 .A {
-    grid-column: span 2;
+    grid-column: span 3; 
     grid-row: 1;
 }
 
 .B {
-    grid-column: 1;
-    grid-row: span 2;
+    grid-column: 1; 
+    grid-row: span 2; 
 }
 
 .C {
-    grid-column: 2 ;
-    grid-row: 2;
+    grid-column: 3; 
+    grid-row: 3; 
 }
 
 .D {
-    grid-column: 2;  
-    grid-row: 3;
+    grid-column: 2; 
+    grid-row: 3; 
 }
 
 .E {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column:2/span 3; 
+    grid-row:2; 
 }
